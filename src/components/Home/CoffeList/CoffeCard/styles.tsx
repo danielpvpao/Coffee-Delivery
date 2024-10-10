@@ -128,6 +128,7 @@ button{
     background-color: ${(props) => props.theme["base-button"]};
     &:hover{
         cursor: pointer;
+        color: ${(props) => props.theme["purple-dark"]};
     }
 }
 }
