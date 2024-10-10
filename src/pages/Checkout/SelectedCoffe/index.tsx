@@ -4,24 +4,25 @@ import { Buttons, H1AndButtons, InputNumber, PriceP, Span } from './styles';
 import { CoffeeContext } from '../../../contexts/CoffeeContext';
 
 export function SelectedCoffe() {
-  const { SelectedCoffes, setTotalPrice, updateCoffeAmount, RemoveSelectedCoffe } = useContext(CoffeeContext);
+  const { SelectedCoffes, setTotalPrice, updateCoffeAmount, RemoveSelectedCoffe, TotalPrice } = useContext(CoffeeContext);
   
   return (
     <>
       {SelectedCoffes.map((coffe) => {
-        const AddOneOnInput = () => {
-          if (coffe.Amount < 99) {
-            updateCoffeAmount(coffe.id, coffe.Amount + 1);
-            setTotalPrice((state) => state + coffe.Price);
-          }
-        };
-
-        const RemoveOneOnInput = () => {
-          if (coffe.Amount > 1) {
-            updateCoffeAmount(coffe.id, coffe.Amount - 1);
-            setTotalPrice((state) => state - coffe.Price);
-          }
-        };
+       const AddOneOnInput = () => {
+        if (coffe.Amount < 99) {
+          updateCoffeAmount(coffe.id, coffe.Amount + 1);
+          setTotalPrice(TotalPrice + coffe.Price);
+        }
+      };
+      
+      const RemoveOneOnInput = () => {
+        if (coffe.Amount > 1) {
+          updateCoffeAmount(coffe.id, coffe.Amount - 1);
+          setTotalPrice(TotalPrice - coffe.Price);
+        }
+      };
+      
         
         return (
           <Span key={coffe.id}>

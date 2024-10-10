@@ -66,13 +66,13 @@ interface CoffeeContextProvider {
   TotalPrice: number;
   Number: number;
   activeButton: string;
-  Data: DataProps | undefined;
+  Data: DataProps | null;  // Agora permite 'null'
   isTotalPriceCalculated: boolean;
   setCoffeCardNumber: (value: number) => void;
   setTotalPrice: (value: number) => void;
   setNumber: (value: number) => void;
   setActiveButton: (value: string) => void;
-  setData: (data: DataProps) => void;
+  setData: (data: DataProps | null) => void;  // Ajustado para aceitar 'null'
   setIsTotalPriceCalculated: (value: boolean) => void;
   dispatch: (action: Action) => void;
   RemoveSelectedCoffe: (value: number) => void;
@@ -112,7 +112,7 @@ export function CoffeeContextProvider({ children }: Props) {
   const [TotalPrice, setTotalPrice] = useState<number>(0);
   const [Number, setNumber] = useState<number>(0);
   const [activeButton, setActiveButton] = useState<string>("Cartão de Crédito");
-  const [Data, setData] = useState<DataProps | undefined>(undefined); 
+  const [Data, setData] = useState<DataProps | null>(null);  // Inicializa com 'null'
   const [isTotalPriceCalculated, setIsTotalPriceCalculated] = useState<boolean>(false);
   
   function RemoveSelectedCoffe(id: number) { 
