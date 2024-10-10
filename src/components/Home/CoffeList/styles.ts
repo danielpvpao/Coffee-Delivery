@@ -31,7 +31,7 @@ export const CoffeListContainer = styled.div`
     gap: 8rem;
 
     @media (max-width: 1024px) {
-      width: 100%;
+      width: 100vw;
       gap: 1rem;
       margin: 0 auto;
     }

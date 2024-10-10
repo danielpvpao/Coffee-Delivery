@@ -72,5 +72,7 @@ export const PriceP = styled.p`
                 font-family: ${(props) => props.theme.TextM.fontFamily};
                 font-weight: ${(props) => props.theme.TextM.fontWeight.bold};
                 color: ${(props) => props.theme["base-text"]};
-              
+                @media (max-width:1024px) {
+                margin-bottom: 4rem;
+                }
 `

@@ -14,7 +14,7 @@ export const MainContainer = styled.main`
       margin-right: 8.5rem;
       margin-top: 6.7rem;
       @media (max-width: 1024px) {
-    width: 35rem;
+    width: 95vw;
   }
     }
   }
@@ -56,6 +56,9 @@ export const BaseWithH1 = styled.div`
         background-clip: content-box, border-box;
         border-image-slice: 1;
         margin-top: 3rem;
+        @media (max-width:1024px) {
+          width: 95vw;
+        }
         .ComplementarDiv{
           height: 80%;
           width: 100%;
