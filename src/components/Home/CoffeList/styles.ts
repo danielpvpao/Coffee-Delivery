@@ -7,6 +7,9 @@ export const CoffeListContainer = styled.div`
     margin: 0 auto;
     margin-top: 8rem;
     gap: 4rem;
+    @media (max-width:1024px) {
+      width: 100vw;
+    }
     h1{
        font-size: ${(props) => props.theme.TitleL.fontSize};
         font-family: ${(props) => props.theme.TitleL.fontFamily};

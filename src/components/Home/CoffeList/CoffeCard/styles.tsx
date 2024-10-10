@@ -14,7 +14,7 @@ flex-direction: column;
 background-color: ${(props) => props.theme["base-card"]};
 @media (max-width:1024px) {
     width: 50vw;
-    height: 23rem;
+    height: 24rem;
 }
 img{
 margin-top:  -2rem; 
@@ -119,6 +119,7 @@ justify-content: space-around;
 border-radius: 6px;
 @media (max-width: 1024px) {
     margin-bottom: 1rem;
+    width: 10rem;
 }
 button{
     align-items: center;
