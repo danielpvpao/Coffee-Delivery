@@ -83,10 +83,10 @@ img{
     }
 @media (max-width: 1024px) {
   h1{
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   p{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   
 }

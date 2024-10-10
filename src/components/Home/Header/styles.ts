@@ -5,22 +5,27 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   width: 100vw;
+  img{
+    @media (max-width:1024px) {
+      margin-left: 2rem;
+    }
+  }
   div{
     width: 80%;
     display: flex;
     margin: 0 auto;
     padding-top: 2rem;
     justify-content: space-between;
+    @media (max-width:1024px) {
+      width: 100vw;
+    }
     nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-right: 8rem;
     gap: 1.33rem;
-    @media(max-width: 1024px) {
-   nav{
-    margin-right: 11.5rem;
-   }
+   @media(max-width: 1024px) {
    margin-right:  0;
    gap: 0.2rem;
   }
