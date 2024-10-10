@@ -67,6 +67,7 @@ export const FormContainer = styled.div`
       justify-content: space-between;
       @media (max-width:1024px){
         max-width: 100%;
+        gap: 0.5rem;
       }
     }
   }
@@ -174,7 +175,7 @@ export const BaseInput = styled.input`
   &.input4{
     width: 22.2rem;
     @media (max-width:1024px){
-        max-width: 11rem;
+        max-width: 10rem;
       }
   }
   &.input5 {
