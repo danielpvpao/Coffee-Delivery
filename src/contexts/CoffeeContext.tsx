@@ -66,7 +66,7 @@ interface CoffeeContextProvider {
   TotalPrice: number;
   Number: number;
   activeButton: string;
-  Data: DataProps;
+  Data: DataProps | undefined;
   isTotalPriceCalculated: boolean;
   setCoffeCardNumber: (value: number) => void;
   setTotalPrice: (value: number) => void;

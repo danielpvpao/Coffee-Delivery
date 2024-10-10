@@ -12,14 +12,14 @@ export function SelectedCoffe() {
         const AddOneOnInput = () => {
           if (coffe.Amount < 99) {
             updateCoffeAmount(coffe.id, coffe.Amount + 1);
-            setTotalPrice((state: number) => state + coffe.Price);
+            setTotalPrice((state) => state + coffe.Price);
           }
         };
 
         const RemoveOneOnInput = () => {
           if (coffe.Amount > 1) {
             updateCoffeAmount(coffe.id, coffe.Amount - 1);
-            setTotalPrice((state: number) => state - coffe.Price);
+            setTotalPrice((state) => state - coffe.Price);
           }
         };
         
