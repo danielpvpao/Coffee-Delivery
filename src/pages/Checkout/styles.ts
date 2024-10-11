@@ -175,7 +175,7 @@ export const BaseInput = styled.input`
   &.input4{
     width: 22.2rem;
     @media (max-width:1024px){
-        max-width: 10rem;
+        max-width: 11.5rem;
       }
   }
   &.input5 {
