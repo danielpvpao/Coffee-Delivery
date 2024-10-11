@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useReducer, useState } from "react";  
 
-export const CoffeeContext = createContext({} as CoffeeContextProvider);
+export const CoffeeContext = createContext({} as CoffeeContextType);
 
 interface Coffe {
   TagText?: string;
@@ -60,19 +60,19 @@ type Action =
   | UpdateCoffesIfExistingAction 
   | CreateCoffeAction;
 
-interface CoffeeContextProvider {
+interface CoffeeContextType{
   SelectedCoffes: Coffe[]; 
   CoffeCardNumber: number;
   TotalPrice: number;
   Number: number;
   activeButton: string;
-  Data: DataProps | null;  // Agora permite 'null'
+  Data: DataProps | null;  
   isTotalPriceCalculated: boolean;
   setCoffeCardNumber: (value: number) => void;
   setTotalPrice: (value: number) => void;
   setNumber: (value: number) => void;
   setActiveButton: (value: string) => void;
-  setData: (data: DataProps | null) => void;  // Ajustado para aceitar 'null'
+  setData: (data: DataProps | null) => void;  
   setIsTotalPriceCalculated: (value: boolean) => void;
   dispatch: (action: Action) => void;
   RemoveSelectedCoffe: (value: number) => void;
@@ -126,11 +126,9 @@ export function CoffeeContextProvider({ children }: Props) {
     
     const removedCoffe = SelectedCoffes.find((coffe: Coffe) => coffe.id === id);
     if (removedCoffe) {
-      if (removedCoffe.Amount === 1) {
-        setTotalPrice((state) => state - removedCoffe.Price);
-      } else {
-        setTotalPrice((state) => state - removedCoffe.FinalPrice);
-      }
+      if (removedCoffe.Amount) {
+        setTotalPrice((state) => state - removedCoffe.Price * removedCoffe.Amount);
+      } 
     }
   }
 

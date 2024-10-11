@@ -5,7 +5,6 @@ import { CoffeeContext } from '../../../contexts/CoffeeContext';
 
 export function SelectedCoffe() {
   const { SelectedCoffes, setTotalPrice, updateCoffeAmount, RemoveSelectedCoffe, TotalPrice } = useContext(CoffeeContext);
-  
   return (
     <>
       {SelectedCoffes.map((coffe) => {
