@@ -5,11 +5,9 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  img{
-    @media (max-width:1024px) {
-      margin-left: 2rem;
+  @media (max-width:1024px) {
+    width: 80vw;
     }
-  }
   div{
     width: 80%;
     display: flex;
@@ -17,7 +15,7 @@ export const HeaderContainer = styled.header`
     padding-top: 2rem;
     justify-content: space-between;
     @media (max-width:1024px) {
-      width: 100vw;
+      width: 85vw;
     }
     nav {
     display: flex;

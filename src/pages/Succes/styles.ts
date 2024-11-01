@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MainContainer = styled.main`
   section {
     display: flex;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 6rem;
   justify-content: space-between;
@@ -57,11 +57,11 @@ export const BaseWithH1 = styled.div`
         border-image-slice: 1;
         margin-top: 3rem;
         @media (max-width:1024px) {
-          width: 95vw;
+          width: 90vw;
         }
         .ComplementarDiv{
           height: 80%;
-          width: 100%;
+          width: 90%;
           padding-top: 2.55rem;
           padding-bottom: 2.55rem;
           gap: 2rem;

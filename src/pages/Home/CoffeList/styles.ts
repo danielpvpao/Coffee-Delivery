@@ -16,6 +16,7 @@ export const CoffeListContainer = styled.div`
         line-height: ${(props) => props.theme.TitleL.lineHeight};
         font-weight: ${(props) => props.theme.TitleL.fontWeight};
         color:  ${(props) => props.theme["base-subtitle"]};
+        margin: 0 auto;
     }
     section {
   display: flex;
@@ -34,7 +35,7 @@ export const CoffeListContainer = styled.div`
     gap: 8rem;
 
     @media (max-width: 1024px) {
-      width: 100vw;
+      width: 90vw;
       gap: 1rem;
       margin: 0 auto;
     }

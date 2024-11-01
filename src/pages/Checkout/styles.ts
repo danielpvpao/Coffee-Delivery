@@ -11,6 +11,8 @@ export const CheckoutContainer = styled.div`
     @media (max-width: 1024px) {
       gap: 2rem;
       display: flex;
+      margin: 0;
+      margin-top:4rem;
       flex-direction: column;
   }
 }
