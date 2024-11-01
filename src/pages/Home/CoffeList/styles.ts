@@ -22,7 +22,9 @@ export const CoffeListContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin: 0 auto;
+  @media (max-width:768px) {
+    margin: 0 auto;
+    }
   gap: 8rem;
 
   @media (max-width: 1024px) {

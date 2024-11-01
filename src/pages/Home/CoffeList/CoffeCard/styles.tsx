@@ -12,8 +12,8 @@ height: 19.375rem;
 text-align: center;
 flex-direction: column;
 background-color: ${(props) => props.theme["base-card"]};
-@media (max-width:1024px) {
-    width: 45vw;
+@media (max-width:768px) {
+    width: 50vw;
     height: 24rem;
 }
 img{
