@@ -13,7 +13,7 @@ text-align: center;
 flex-direction: column;
 background-color: ${(props) => props.theme["base-card"]};
 @media (max-width:768px) {
-    width: 50vw;
+    width: 40vw;
     height: 24rem;
 }
 img{
@@ -32,7 +32,7 @@ font-family: ${(props) => props.theme.Tag.fontFamily};
 line-height: ${(props) => props.theme.Tag.lineHeight};
 font-weight: ${(props) => props.theme.Tag.fontWeight};
 color: ${(props) => props.theme["yellow-dark"]};
-padding: 0.25rem 0.96rem;
+padding: 0.25rem 0.15rem;
 text-align: center;
 border-radius: 100px;
 background-color: ${(props) => props.theme["yellow-light"]};
