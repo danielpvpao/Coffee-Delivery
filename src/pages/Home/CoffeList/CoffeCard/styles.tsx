@@ -13,7 +13,7 @@ text-align: center;
 flex-direction: column;
 background-color: ${(props) => props.theme["base-card"]};
 @media (max-width:768px) {
-    width: 48vw;
+    width: 40vw;
     height: 24rem;
 }
 img{
