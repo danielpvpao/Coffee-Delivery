@@ -119,7 +119,7 @@ justify-content: space-around;
 border-radius: 6px;
 @media (max-width: 1024px) {
     margin-bottom: 1rem;
-    width: 10rem;
+    width: 7rem;
 }
 button{
     align-items: center;
