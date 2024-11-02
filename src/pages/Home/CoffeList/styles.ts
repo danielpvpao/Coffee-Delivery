@@ -16,15 +16,14 @@ export const CoffeListContainer = styled.div`
         line-height: ${(props) => props.theme.TitleL.lineHeight};
         font-weight: ${(props) => props.theme.TitleL.fontWeight};
         color:  ${(props) => props.theme["base-subtitle"]};
-        margin: 0 auto;
+        @media (max-width:768px) {
+       margin: 0 auto;
+       }
     }
     section {
   display: flex;
   flex-direction: row;
   width: 100%;
-  @media (max-width:768px) {
-    margin: 0 auto;
-    }
   gap: 8rem;
 
   @media (max-width: 1024px) {
