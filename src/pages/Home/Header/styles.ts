@@ -5,8 +5,10 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   width: 100vw;
+  white-space: nowrap;
   @media (max-width:1024px) {
     width: 80vw;
+    margin: 0 auto;
     }
   div{
     width: 80%;
@@ -16,6 +18,7 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     @media (max-width:1024px) {
       width: 85vw;
+      gap: 2.5rem;
     }
     nav {
     display: flex;

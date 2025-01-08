@@ -13,7 +13,8 @@ text-align: center;
 flex-direction: column;
 background-color: ${(props) => props.theme["base-card"]};
 @media (max-width:768px) {
-    width: 45vw;
+    max-width: 362px;
+    margin: 0 auto;
     height: 24rem;
 }
 img{
@@ -75,8 +76,10 @@ margin-top: 2.06rem;
 margin-bottom: 1rem;
 @media (max-width: 1024px) {
     margin-top: 0;
+    width: 100%;
     flex-direction: column;
     white-space: nowrap;
+background-color: inherit;
     height: 100%;
     align-items: center;
     justify-content: center;

@@ -22,7 +22,7 @@ export function CoffeList() {
                 <h1>Nossos cafés</h1>
 
                 <section>
-                    <div className="ConnectionDiv">
+                    
                         <CoffeCard
                             TagText="TRADICIONAL"
                             Title="Expresso Tradicional"
@@ -39,8 +39,6 @@ export function CoffeList() {
                             Price={4.50}
                             id={2}
                         />
-                    </div>
-                    <div className="ConnectionDiv">
                         <CoffeCard 
                             TagText="TRADICIONAL"
                             Title="Expresso Cremoso"
@@ -58,11 +56,10 @@ export function CoffeList() {
                             Price={6.00}
                             id={4}
                         />
-                    </div>
                 </section>
 
                 <section>
-                    <div className="ConnectionDiv">
+                    
                         <CoffeCard
                             TagText="TRADICIONAL"
                             TagText2="COM LEITE"
@@ -81,8 +78,7 @@ export function CoffeList() {
                             Price={8.00}
                             id={6}
                         />
-                    </div>
-                    <div className="ConnectionDiv">
+                    
                         <CoffeCard
                             TagText="TRADICIONAL"
                             TagText2="COM LEITE"
@@ -101,11 +97,10 @@ export function CoffeList() {
                             Price={7.50}
                             id={8}
                         />
-                    </div>
                 </section>
 
                 <section>
-                    <div className="ConnectionDiv">
+                    
                         <CoffeCard
                             TagText="TRADICIONAL"
                             TagText2="COM LEITE"
@@ -124,8 +119,6 @@ export function CoffeList() {
                             Price={12.00}
                             id={10}
                         />
-                    </div>
-                    <div className="ConnectionDiv">
                         <CoffeCard
                             TagText="ESPECIAL"
                             TagText2="ALCOÓLICO"
@@ -144,11 +137,10 @@ export function CoffeList() {
                             Price={15.60}
                             id={12}
                         />
-                    </div>
                 </section>
 
                 <section>
-                    <div className="ConnectionDiv">
+                    
                         <CoffeCard
                             TagText="ESPECIAL"
                             Title="Árabe"
@@ -166,7 +158,6 @@ export function CoffeList() {
                             Price={25.40}
                             id={14}
                         />
-                    </div>
                 </section>
                 
             </CoffeListContainer>
