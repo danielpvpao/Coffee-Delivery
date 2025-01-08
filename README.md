@@ -1,8 +1,8 @@
 # Coffee Delivery ☕
 
 
-![Coffee Delivery](![chrome-capture-2025-1-8 (2)](https://github.com/user-attachments/assets/bc6b33ed-92c1-43b0-b471-3bfefd8242bd)
-)
+(![chrome-capture-2025-1-8 (2)](https://github.com/user-attachments/assets/bc6b33ed-92c1-43b0-b471-3bfefd8242bd)
+
 
 ## Sobre o projeto
 
